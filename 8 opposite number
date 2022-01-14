@@ -1,0 +1,3 @@
+function opposite(number) {
+    return (number.toString().slice(0,1) !== "-") ? parseFloat("-" + (number.toString())) : parseFloat(number.toString().replace("-",""));
+}
