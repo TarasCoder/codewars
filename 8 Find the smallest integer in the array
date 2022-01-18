@@ -1,0 +1,7 @@
+function findSmallestInt(args) {
+    let temp = args[0];
+    for (i of args){
+        i < temp ? temp = i : null;
+    }
+    return temp;
+}
