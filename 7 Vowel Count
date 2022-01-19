@@ -1,0 +1,17 @@
+function getCount(str) {
+    var vowelsCount = 0;
+    let newArr = str.replace(/\s/g,'').split("");
+    newArr.forEach(item => {
+      switch (item) {
+          case "a":
+          case "e":  
+          case "i":  
+          case "o":  
+          case "u":
+            vowelsCount++;
+          break;  
+      }
+    })
+    
+    return vowelsCount;
+  }
