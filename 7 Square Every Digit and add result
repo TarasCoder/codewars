@@ -1,0 +1,13 @@
+function squareDigits(num){
+    let newArr = [];
+    let newString = "";
+    let arr = num.toString().split("")
+    arr.forEach(item=>{
+        newArr.push(parseInt(item))
+    })
+    newArr.forEach(item=>{
+        newString += Math.pow(item, 2)
+    })
+
+    return parseInt(newString);
+  }
