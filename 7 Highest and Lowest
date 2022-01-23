@@ -1,0 +1,14 @@
+function highAndLow(numbers){
+    let newArr = [];
+    let arr = numbers.split(" ");
+    arr.forEach(item => {
+        newArr.push(Number(item))
+    })
+    let tempMin = newArr[0];
+    let tempMax = newArr[0];
+    newArr.forEach(item=>{
+        item > tempMax ? tempMax = item : null;
+        item < tempMin ? tempMin = item : null;
+    })
+    return tempMax + " " + tempMin;
+}
