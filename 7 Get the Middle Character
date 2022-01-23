@@ -1,0 +1,14 @@
+function getMiddle(s) {
+  console.log(s.length);
+  let char = s.length / 2;
+  if (s.length === 1) {
+      return s;
+  }
+  if (s.length % 2 === 0) {
+    let middleEven =  s.charAt(char - 1) + s.charAt(char)
+    return middleEven;
+  } else {
+    let middleOdd = s.charAt(Math.ceil(char - 1))
+    return middleOdd;
+  }
+}
