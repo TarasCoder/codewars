@@ -1,0 +1,15 @@
+function accum(s) {
+    let string = s.toLowerCase();
+    let newS = "";
+    let tempS = "";
+    for (let i = 0; i < string.length; i++) {
+        tempS = string[i].repeat(i+1);
+        newS += tempS[0].toUpperCase() + tempS.slice(1) + "-";
+    }
+    return newS.slice(0,newS.length-1);
+}
+
+// Test Example
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
