@@ -1,0 +1,6 @@
+function findShort(s){
+    let stringArr = s.split(" ");
+    let shortest = stringArr[0];
+    stringArr.forEach(item =>{item.length < shortest.length ? shortest = item : null})
+    return shortest.length;
+}
