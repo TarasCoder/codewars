@@ -1,0 +1,11 @@
+function maskify(cc) {
+    let newString = "";
+    let numArr = cc.split("");
+    if (numArr.length > 4){
+        let last4 = numArr.slice(numArr.length-4).join("");
+        for (let i = 0; i < numArr.length - 4; i++) {
+            newString += "#";
+        }
+        return newString + last4;
+    } else return cc;
+}
